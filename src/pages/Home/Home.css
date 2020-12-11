@@ -22,7 +22,7 @@
   width: 50vw;
 }
 
-img {
+#me {
   height: 20rem;
   border-radius: 50%;
   position: absolute;
@@ -30,14 +30,14 @@ img {
   top: 10rem;
 }
 
-h1 {
+#hey {
   position: absolute;
   left: 50rem;
   top: 25rem;
 }
 
-p {
+#intro {
   position: absolute;
   left: 55rem;
-  top: 37rem;
+  top: 38rem;
 }

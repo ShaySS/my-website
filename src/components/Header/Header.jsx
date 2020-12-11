@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
       <nav>
-        <ul>
+        <ul id="nav">
           <li>
             <Link to="/">home</Link>
           </li>

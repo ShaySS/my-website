@@ -16,7 +16,14 @@ h1 {
   color: #673e29;
 }
 
+h2 {
+  font-family: Luminari, fantasy;
+  font-size: 4rem;
+  color: #673e29;
+}
+
 p {
   font-size: 2rem;
   color: #956842;
+  margin: 0;
 }

@@ -15,13 +15,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <div className="container">
-        <Route path="/" exact component={Home} />
-        <Route path="/whoIam" component={WhoIam} />
-        <Route path="/whoIactuallyam" component={WhoIactuallyam} />
-        <Route path="/whatIdo" component={WhatIdo} />
-        <Route path="/wheretofindme" component={Wheretofindme} />
-      </div>
+      <Route path="/" exact component={Home} />
+      <Route path="/whoIam" component={WhoIam} />
+      <Route path="/whoIactuallyam" component={WhoIactuallyam} />
+      <Route path="/whatIdo" component={WhatIdo} />
+      <Route path="/wheretofindme" component={Wheretofindme} />
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

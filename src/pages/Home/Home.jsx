@@ -9,9 +9,9 @@ export default function Home() {
         <div id="pic">some pic</div>
       </div>
       <div>
-        <img src={me} alt="pic of me"></img>
-        <h1>Hey</h1>
-        <p>i'm Shay</p>
+        <img src={me} alt="pic of me" id="me"></img>
+        <h1 id="hey">Hey</h1>
+        <p id="intro">i'm Shay</p>
       </div>
     </div>
   );

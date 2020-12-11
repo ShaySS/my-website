@@ -3,7 +3,8 @@ nav {
   top: 0;
   z-index: 1;
 }
-ul {
+
+#nav {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -19,7 +20,7 @@ li {
   padding-top: 1.3rem;
 }
 
-li a {
+#nav li a {
   color: #f3ece5;
   text-decoration: none;
 }

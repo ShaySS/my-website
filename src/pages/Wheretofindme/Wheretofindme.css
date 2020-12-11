@@ -1,0 +1,53 @@
+#thanks {
+  position: absolute;
+  top: 6rem;
+  left: 5rem;
+  display: block;
+}
+
+.curve {
+  width: 10rem;
+  position: absolute;
+  top: 14rem;
+  left: 22rem;
+}
+.curve path {
+  fill: #673e29;
+}
+
+.line {
+  width: 44rem;
+  border-bottom: 2px solid #673e29;
+  position: absolute;
+  top: 18.5rem;
+  left: 5rem;
+}
+
+#contactIcons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25rem;
+  left: 5rem;
+}
+
+#contactLinks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 23rem;
+  left: 7rem;
+}
+
+#contactLinks li a {
+  text-decoration: none;
+}
+
+#contactLinks li {
+  list-style-type: none;
+}
+
+.mediaIcon {
+  width: 1.5rem;
+  margin-bottom: 20px;
+}
