@@ -1,0 +1,22 @@
+:root {
+  font-family: "Comfortaa", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3ece5;
+  font-size: 16px;
+  margin-top: 80px;
+}
+body {
+  margin: 0;
+}
+
+h1 {
+  /* font-family: Snell Roundhand, cursive; */
+  font-family: Luminari, fantasy;
+  font-size: 6rem;
+  /* font-family: Trattatello, fantasy; */
+  color: #673e29;
+}
+
+p {
+  font-size: 2rem;
+  color: #956842;
+}

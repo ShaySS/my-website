@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#pic {
+  height: 20rem;
+  width: 34rem;
+  background-color: gray;
+  position: absolute;
+  top: 10rem;
+  left: 8rem;
+}
+
+#picSection {
+  height: 100vh;
+  width: 50vw;
+}
+
+#content {
+  height: 100vh;
+  width: 50vw;
+}
+
+img {
+  height: 20rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 60rem;
+  top: 10rem;
+}
+
+h1 {
+  position: absolute;
+  left: 50rem;
+  top: 25rem;
+}
+
+p {
+  position: absolute;
+  left: 55rem;
+  top: 37rem;
+}
