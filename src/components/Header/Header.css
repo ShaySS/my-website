@@ -4,23 +4,54 @@ nav {
   z-index: 1;
 }
 
-#nav {
+.navLinks {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-left: 10%;
-  background-color: #32352e;
+  padding-left: 0;
+  background-color: #2a293b;
   width: 100vw;
   height: 4rem;
   margin: 0;
 }
 
-li {
+.navLinks li {
   padding-top: 1.3rem;
 }
 
-#nav li a {
+.navLinks li a:hover {
+  color: #eca971;
+  transition: 0.3s;
+}
+
+.navLinks li a {
   color: #f3ece5;
   text-decoration: none;
+  transition: 0.4s ease-out;
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  transition: 0.8s ease-out;
+}
+
+.navLinks li a:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  top: 20px;
+  background: #eca971;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.navLinks li a:hover:after,
+.navLinks li a:focus:after,
+.navLinks li a:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
 }

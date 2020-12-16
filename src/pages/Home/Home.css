@@ -1,15 +1,8 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-#pic {
-  height: 20rem;
-  width: 34rem;
-  background-color: gray;
+#dev {
+  width: 40rem;
   position: absolute;
-  top: 10rem;
-  left: 8rem;
+  top: 14rem;
+  left: 47rem;
 }
 
 #picSection {
@@ -22,22 +15,89 @@
   width: 50vw;
 }
 
+.speech {
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 375px;
+  padding: 20px;
+}
+
+.speech--right {
+  background-image: url("../../assets/speechRight.svg");
+  position: absolute;
+  left: 32rem;
+  top: 12rem;
+}
+
+.speech--left {
+  background-image: url("../../assets/speechLeft.svg");
+  position: absolute;
+  left: 35rem;
+  top: 18rem;
+}
+
 #me {
-  height: 20rem;
+  height: 23rem;
   border-radius: 50%;
   position: absolute;
-  left: 60rem;
+  left: 7rem;
   top: 10rem;
 }
 
-#hey {
-  position: absolute;
-  left: 50rem;
-  top: 25rem;
+/* .shahbaz {
+  display: inline;
+  transition: 0.3s ease-out;
+}
+.shahbaz:hover {
+  color: #4c6a2d;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+.speechRight {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.speechLeft {
+  color: #c56e3f;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 0;
 }
 
-#intro {
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  transition: 0.8s ease-out;
+}
+
+.underline:hover {
+  color: #2a293b;
+  transition: 0.3s;
+}
+.underline:after {
+  content: "";
   position: absolute;
-  left: 55rem;
-  top: 38rem;
+  right: 0;
+  width: 0;
+  top: 25px;
+  background: #2a293b;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.underline:hover {
+  cursor: pointer;
+}
+
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
 }

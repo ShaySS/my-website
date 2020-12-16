@@ -8,7 +8,7 @@ import twitter from "../../assets/twittr.png";
 export default function Wheretofindme() {
   return (
     <>
-      <h2 id="thanks">Thanks for stopping by</h2>
+      <h1 id="thanks">Thanks for stopping by</h1>
       <Divider className="curve"></Divider>
       <div className="line"></div>
       <div id="contactIcons">
