@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import me from "../../assets/me2.jpg";
-import devscreen from "../../assets/devscreen.png";
+import devscreen from "../../assets/devscreen.svg";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <img src={me} alt="pic of me" id="me"></img>
       <div className="speech speech--right">
-        <p className="speechRight">
+        <p className="textRight">
           hey, i'm{" "}
-          <Link to="/whoIactuallyam" className="underline speechRight">
+          <Link to="/whoIactuallyam" className="underline textRight">
             Shahbaz
           </Link>
         </p>

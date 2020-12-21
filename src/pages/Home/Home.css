@@ -1,8 +1,8 @@
 #dev {
-  width: 40rem;
+  width: 32rem;
   position: absolute;
-  top: 14rem;
-  left: 47rem;
+  top: 16rem;
+  left: 52rem;
 }
 
 #picSection {
@@ -26,14 +26,14 @@
   background-image: url("../../assets/speechRight.svg");
   position: absolute;
   left: 32rem;
-  top: 12rem;
+  top: 11rem;
 }
 
 .speech--left {
   background-image: url("../../assets/speechLeft.svg");
   position: absolute;
   left: 35rem;
-  top: 18rem;
+  top: 17rem;
 }
 
 #me {
@@ -53,14 +53,14 @@
   cursor: pointer;
   transition: 0.3s;
 } */
-.speechRight {
-  color: #fff;
+.textRight {
+  color: #c8ddc3;
   text-decoration: none;
   font-size: 1.4rem;
   margin: 0;
 }
 .speechLeft {
-  color: #c56e3f;
+  color: #61988e;
   text-decoration: none;
   font-size: 1.4rem;
   margin: 0;
