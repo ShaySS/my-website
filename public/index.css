@@ -16,6 +16,10 @@ h1 {
 
 p {
   font-size: 1.4rem;
-  color: #956842;
+  color: #61988e;
   margin: 0;
+}
+
+.p--light {
+  color: #c8ddc3;
 }

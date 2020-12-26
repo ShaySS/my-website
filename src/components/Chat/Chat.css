@@ -1,0 +1,29 @@
+.bubble {
+  background-repeat: no-repeat;
+  width: 640px;
+  display: inline-block;
+}
+
+.space {
+  padding: 15px;
+}
+
+.bubble--right {
+  height: 120px;
+  background-image: url("../../assets/bubbleRight.svg");
+}
+
+.bubble--left {
+  height: 80px;
+  background-image: url("../../assets/bubbleLeft.svg");
+}
+
+.colorRight {
+  color: #c8ddc3;
+  padding: 20px 50px 0 20px;
+}
+
+.colorLeft {
+  color: #61988e;
+  padding: 20px 0 0 40px;
+}

@@ -1,0 +1,105 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 1fr 0.6fr;
+  grid-template-rows: 0.3fr 1fr;
+  gap: 3px 3px;
+  grid-template-areas:
+    "pic pic text text"
+    "avatar chatleft chatright myAvatar"
+    "avatar chatleft chatright myAvatar";
+}
+
+.pic {
+  grid-area: pic;
+}
+
+.text {
+  grid-area: text;
+}
+
+.chatleft {
+  grid-area: chatleft;
+  display: grid;
+  grid-template-rows: repeat(8, 120px);
+  align-items: center;
+}
+
+.chatright {
+  grid-area: chatright;
+  display: grid;
+  grid-template-rows: repeat(8, 120px);
+}
+
+.avatar {
+  grid-area: avatar;
+  display: grid;
+  grid-template-rows: repeat(8, 120px);
+}
+
+.myAvatar {
+  grid-area: myAvatar;
+  display: grid;
+  grid-template-rows: repeat(8, 120px);
+}
+
+.avatar1 {
+  grid-row: 1;
+  justify-self: center;
+}
+
+.avatar2 {
+  grid-row: 4;
+  justify-self: center;
+}
+
+.avatar3 {
+  grid-row: 6;
+  justify-self: center;
+}
+
+.l1 {
+  grid-row: 1;
+}
+
+.l2 {
+  grid-row: 4;
+}
+
+.l3 {
+  grid-row: 6;
+}
+
+.r1 {
+  grid-row: 2;
+}
+
+.r2 {
+  grid-row: 3;
+}
+
+.r3 {
+  grid-row: 5;
+}
+
+.r4 {
+  grid-row: 7;
+}
+
+.r5 {
+  grid-row: 8;
+}
+
+.myAvatar1 {
+  grid-row: 2;
+  margin-top: -20px;
+}
+
+.myAvatar2 {
+  grid-row: 5;
+  margin-top: -20px;
+}
+
+.myAvatar3 {
+  grid-row: 7;
+  margin-top: -20px;
+}
