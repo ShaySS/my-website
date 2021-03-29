@@ -9,7 +9,9 @@ export default function whoIam() {
     <>
       <div className="grid-container">
         <div className="pic">picarea</div>
-        <div className="text">textarea</div>
+        <div className="text">
+          <h2>a conversation with me</h2>
+        </div>
         <div className="avatar">
           <Avatar className="avatar1" />
           <Avatar className="avatar2" />
@@ -27,7 +29,7 @@ export default function whoIam() {
         <div className="chatright">
           <Chat
             right
-            content="im an engineer who deploys fullstack applications for the web!"
+            content="im an engineer who deploys fullstack applications for the web"
             className="r1"
           />
           <Chat

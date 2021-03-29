@@ -19,11 +19,11 @@
 }
 
 .colorRight {
-  color: #c8ddc3;
+  color: var(--light_teal);
   padding: 20px 50px 0 20px;
 }
 
 .colorLeft {
-  color: #61988e;
+  color: var(--dark_teal);
   padding: 20px 0 0 40px;
 }

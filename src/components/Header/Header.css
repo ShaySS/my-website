@@ -21,7 +21,7 @@ nav {
 }
 
 .navLinks li a:hover {
-  color: #eca971;
+  color: var(--dark_orange);
   transition: 0.3s;
 }
 
@@ -41,7 +41,7 @@ nav {
   right: 0;
   width: 0;
   top: 20px;
-  background: #eca971;
+  background: var(--dark_orange);
   height: 2px;
   transition-property: width;
   transition-duration: 0.4s;

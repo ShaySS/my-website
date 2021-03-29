@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+}
+
+.heading {
+  height: 18rem;
+  width: 22rem;
+}
+
+.body {
+  height: 18rem;
+  width: 56rem;
+}
+
+/* Primary Card */
+
+.primaryHeadingBackground {
+  background-color: var(--dark_purple);
+}
+
+.primaryHeadingText {
+  color: var(--light_purple);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.primaryBodyBackground {
+  background-color: var(--light_purple);
+}
+
+.primaryBodyText {
+  color: var(--dark_purple);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Secondary Card */
+
+.secondaryHeadingBackground {
+  background-color: var(--dark_orange);
+}
+
+.secondaryHeadingText {
+  color: var(--light_orange);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.secondaryBodyBackground {
+  background-color: var(--light_orange);
+}
+
+.secondaryBodyText {
+  color: var(--dark_orange);
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Tertiary Card */
+
+.tertiaryHeadingBackground {
+  background-color: var(--dark_teal);
+}
+
+.tertiaryHeadingText {
+  color: var(--light_teal);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.tertiaryBodyBackground {
+  background-color: var(--light_teal);
+}
+
+.tertiaryBodyText {
+  color: var(--dark_teal);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}

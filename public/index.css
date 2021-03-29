@@ -3,7 +3,14 @@
   background-color: #fff8ea;
   font-size: 16px;
   margin-top: 80px;
+  --dark_purple: #2a293b;
+  --light_purple: #9593bf;
+  --dark_orange: #c56e3f;
+  --light_orange: #f5cca9;
+  --dark_teal: #61988e;
+  --light_teal: #c8ddc3;
 }
+
 body {
   margin: 0;
 }
@@ -11,6 +18,12 @@ body {
 h1 {
   font-family: Luminari, fantasy;
   font-size: 4rem;
+  color: #673e29;
+}
+
+h2 {
+  font-family: "Comfortaa", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
   color: #673e29;
 }
 
