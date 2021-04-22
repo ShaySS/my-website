@@ -8,7 +8,7 @@ export default function WhoIactuallyam() {
 
   return (
     <>
-      <div className={styles.intro}>
+      <div styleName="intro">
         <div>pic of me</div>
         <div>
           <p>Shahbaz,</p>
