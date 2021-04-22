@@ -1,2 +1,2 @@
 Make copy 
-CSS modules 
+CSS modules, refactor using class composition

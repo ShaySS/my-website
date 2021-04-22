@@ -1,29 +1,24 @@
 import React from "react";
 import InfoCard from "../../components/InfoCard/InfoCard";
 import { copy } from "../../assets/copy";
-import "./WhoIactuallyam.css";
+import styles from "./WhoIactuallyam.module.css";
 
 export default function WhoIactuallyam() {
   const data = copy.WhoIActuallyAm;
 
   return (
     <>
-      <div className="intro">
+      <div className={styles.intro}>
         <div>pic of me</div>
         <div>
           <p>Shahbaz,</p>
           <div>{`outside the <div id='box'/>`}</div>
           <div>
-            i’m a big believer in being a well-rounded person, here’s me outside
-            of the coding world
+            i’m a big believer in being a well-rounded person, here’s me outside of the coding world
           </div>
         </div>
       </div>
-      <InfoCard
-        cardStyle="primary"
-        heading={data.primary.heading}
-        body={data.primary.body}
-      />
+      <InfoCard cardStyle="primary" heading={data.primary.heading} body={data.primary.body} />
       <div className="right">
         <InfoCard
           cardStyle="secondary"
@@ -31,11 +26,7 @@ export default function WhoIactuallyam() {
           body={data.secondary.body}
         />
       </div>
-      <InfoCard
-        cardStyle="tertiary"
-        heading={data.tertiary.heading}
-        body={data.tertiary.body}
-      />
+      <InfoCard cardStyle="tertiary" heading={data.tertiary.heading} body={data.tertiary.body} />
     </>
   );
 }
