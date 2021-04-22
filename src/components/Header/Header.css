@@ -20,10 +20,16 @@ nav {
   padding-top: 1.3rem;
 }
 
+.active{
+  color: var(--dark_orange) !important;
+  text-decoration: underline !important;
+}
+
 .navLinks li a:hover {
   color: var(--dark_orange);
   transition: 0.3s;
 }
+
 
 .navLinks li a {
   color: #fff8ea;
@@ -32,7 +38,6 @@ nav {
   display: inline;
   position: relative;
   overflow: hidden;
-  transition: 0.8s ease-out;
 }
 
 .navLinks li a:after {
@@ -41,8 +46,8 @@ nav {
   right: 0;
   width: 0;
   top: 20px;
-  background: var(--dark_orange);
   height: 2px;
+  background: var(--dark_orange);
   transition-property: width;
   transition-duration: 0.4s;
   transition-timing-function: ease-out;
@@ -55,3 +60,4 @@ nav {
   right: auto;
   width: 100%;
 }
+

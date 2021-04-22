@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header/Header";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 //Page imports
@@ -13,14 +13,14 @@ import Wheretofindme from "./pages/Wheretofindme/Wheretofindme";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Header />
-      <Route path="/" exact component={Home} />
-      <Route path="/whoIam" component={WhoIam} />
-      <Route path="/whoIactuallyam" component={WhoIactuallyam} />
-      <Route path="/whatIdo" component={WhatIdo} />
-      <Route path="/wheretofindme" component={Wheretofindme} />
-    </Router>
+    <BrowserRouter>
+        <Header />
+        <Route path="/" exact component={Home} />
+        <Route path="/whoIam" component={WhoIam} />
+        <Route path="/whoIactuallyam" component={WhoIactuallyam} />
+        <Route path="/whatIdo" component={WhatIdo} />
+        <Route path="/wheretofindme" component={Wheretofindme} />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

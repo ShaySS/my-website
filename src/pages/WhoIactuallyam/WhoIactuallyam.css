@@ -1,0 +1,10 @@
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20rem;
+}
