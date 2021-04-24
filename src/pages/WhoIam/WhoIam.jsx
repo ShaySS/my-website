@@ -3,61 +3,39 @@ import "./WhoIam.css";
 import Chat from "../../components/Chat/Chat";
 import { ReactComponent as Avatar } from "../../assets/female_avatar.svg";
 import { ReactComponent as Me } from "../../assets/chatMe.svg";
+import { copy } from "../../assets/copy";
 
 export default function whoIam() {
+  const data = copy.WhoIAm;
+
   return (
     <>
       <div className="grid-container">
-        <div className="pic">picarea</div>
-        <div className="text">
-          <h2>a conversation with me</h2>
+        <div className="banner">
+          <h2>{data.chatting_with}</h2>
         </div>
-        <div className="avatar">
-          <Avatar className="avatar1" />
-          <Avatar className="avatar2" />
-          <Avatar className="avatar3" />
-        </div>
-        <div className="chatleft">
-          <Chat left content="so, what do you do?" className="l1" />
-          <Chat left content="where do you work?" className="l2" />
-          <Chat
-            left
-            content="anything else you'd like to share?"
-            className="l3"
-          />
-        </div>
-        <div className="chatright">
-          <Chat
-            right
-            content="im an engineer who deploys fullstack applications for the web"
-            className="r1"
-          />
-          <Chat
-            right
-            content="I’m well versed in React & Node, see my resume for more!"
-            className="r2"
-          />
-          <Chat
-            right
-            content="i’ve been a developer with Deloitte for a little over a year now working in their digital practice"
-            className="r3"
-          />
-          <Chat
-            right
-            content="i’m great at learning independently, new, unfamiliar technologies excite me!"
-            className="r4"
-          />
-          <Chat
-            right
-            content="oh, and i’m a monster at ping-pong. "
-            className="r5"
-          />
-        </div>
-        <div className="myAvatar">
-          <Me className="myAvatar1" />
-          <Me className="myAvatar2" />
-          <Me className="myAvatar3" />
-        </div>
+          <div className="avatar">
+            <Avatar className="avatar1" />
+            <Avatar className="avatar2" />
+            <Avatar className="avatar3" />
+          </div>
+          <div className="chatleft">
+            <Chat leftSm content={data.ask.what_you_do} className="l1" />
+            <Chat leftSm content={data.ask.where_do_you_work} className="l2" />
+            <Chat leftLg content={data.ask.anything_else} className="l3" />
+          </div>
+          <div className="chatright">
+            <Chat right content={data.answer.what_i_do} className="r1" />
+            <Chat right content={data.answer.what_i_do_2} className="r2" />
+            <Chat right content={data.answer.where_i_work} className="r3" />
+            <Chat right content={data.answer.something_else_to_share} className="r4" />
+            <Chat right content={data.answer.something_else_to_share_2} className="r5" />
+          </div>
+          <div className="myAvatar">
+            <Me className="myAvatar1" />
+            <Me className="myAvatar2" />
+            <Me className="myAvatar3" />
+          </div>
       </div>
     </>
   );

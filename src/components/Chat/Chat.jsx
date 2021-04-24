@@ -1,10 +1,18 @@
 import React from "react";
 import "./Chat.css";
 
-export default function Chat({ content, left, right, className }) {
+export default function Chat({ content, leftSm, leftLg, right, className }) {
   return (
-    <div className={`bubble ${className} ${left ? "bubble--left" : "bubble--right"}`}>
-      <p className={left ? "colorLeft" : "colorRight"}>{content}</p>
+    <div
+
+           className={`bubble ${className} ${
+        
+        leftSm ? "bubbleLeftSm" : leftLg ? "bubbleLeftLg" : "bubble--right"
+      
+      }`}
+    
+    >
+      <p className={leftSm || leftLg ? "colorLeft" : "colorRight"}>{content}</p>
     </div>
   );
 }

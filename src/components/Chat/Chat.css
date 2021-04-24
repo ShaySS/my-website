@@ -1,7 +1,7 @@
 .bubble {
   background-repeat: no-repeat;
-  width: 640px;
   display: inline-block;
+  min-height: 100px;
 }
 
 .space {
@@ -10,12 +10,18 @@
 
 .bubble--right {
   height: 120px;
+  width: 640px;
   background-image: url("../../assets/bubbleRight.svg");
 }
 
-.bubble--left {
-  height: 80px;
-  background-image: url("../../assets/bubbleLeft.svg");
+.bubbleLeftSm {
+  width: 310px;
+  background-image: url("../../assets/bubbleLeftSm.svg");
+}
+
+.bubbleLeftLg {
+  width: 480px;
+  background-image: url("../../assets/bubbleLeftLg.svg");
 }
 
 .colorRight {
