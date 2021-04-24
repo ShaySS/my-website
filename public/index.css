@@ -9,30 +9,27 @@
   --light_orange: #f5cca9;
   --dark_teal: #61988e;
   --light_teal: #c8ddc3;
+  --brown: #673E29;
 }
+
+/* Typography */
 
 body {
   margin: 0;
 }
 
+p {
+  font-size: 1.4rem;
+}
+
 h1 {
-  font-family: Luminari, fantasy;
   font-size: 4rem;
-  color: #673e29;
+  font-family: Snell Roundhand, cursive;
+  color: var(--brown);
 }
 
 h2 {
-  font-family: "Comfortaa", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
-  color: #673e29;
-}
-
-p {
-  font-size: 1.4rem;
-  color: #61988e;
-  margin: 0;
-}
-
-.p--light {
-  color: #c8ddc3;
+  font-family: "Comfortaa", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--brown);
 }

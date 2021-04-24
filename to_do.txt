@@ -1,2 +1,5 @@
 Make copy 
 CSS modules, refactor using class composition
+make it semantic... see notion
+accessibility
+responsiveness

@@ -22,14 +22,14 @@
   padding: 20px;
 }
 
-.speech--right {
+.speechRight {
   background-image: url("../../assets/speechRight.svg");
   position: absolute;
   left: 32rem;
   top: 11rem;
 }
 
-.speech--left {
+.speechLeft {
   background-image: url("../../assets/speechLeft.svg");
   position: absolute;
   left: 35rem;
@@ -59,7 +59,7 @@
   font-size: 1.4rem;
   margin: 0;
 }
-.speechLeft {
+.textLeft {
   color: #61988e;
   text-decoration: none;
   font-size: 1.4rem;

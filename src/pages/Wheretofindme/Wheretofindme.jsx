@@ -1,5 +1,5 @@
 import React from "react";
-import "./Wheretofindme.css";
+import styles from "./Wheretofindme.module.css";
 import { ReactComponent as Divider } from "../../assets/div.svg";
 import gmail from "../../assets/gmail.png";
 import linkedin from "../../assets/linkedin.png";
@@ -9,24 +9,24 @@ export default function Wheretofindme() {
   return (
     <>
       <h1 id="thanks">Thanks for stopping by</h1>
-      <Divider className="curve"></Divider>
-      <div className="line"></div>
+      <Divider className={styles.curve}></Divider>
+      <div className={styles.line}></div>
       <div id="contactIcons">
         <img
           src={gmail}
-          className="mediaIcon"
+          className={styles.mediaIcon}
           alt="gmail"
           rel="noopener noreferrer"
         />
         <img
           src={linkedin}
-          className="mediaIcon"
+          className={styles.mediaIcon}
           alt="linkedin"
           rel="noopener noreferrer"
         />
         <img
           src={twitter}
-          className="mediaIcon"
+          className={styles.mediaIcon}
           alt="twitter"
           rel="noopener noreferrer"
         />

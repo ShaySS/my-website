@@ -8,18 +8,18 @@ export default function WhoIactuallyam() {
 
   return (
     <>
-      <div styleName="intro">
+      <div className={styles.intro}>
         <div>pic of me</div>
         <div>
-          <p>Shahbaz,</p>
-          <div>{`outside the <div id='box'/>`}</div>
+          <h1>Shahbaz,</h1>
+          <h2>{`outside the <div id='box'/>`}</h2>
           <div>
             i’m a big believer in being a well-rounded person, here’s me outside of the coding world
           </div>
         </div>
       </div>
       <InfoCard cardStyle="primary" heading={data.primary.heading} body={data.primary.body} />
-      <div className="right">
+      <div className={styles.right}>
         <InfoCard
           cardStyle="secondary"
           heading={data.secondary.heading}
