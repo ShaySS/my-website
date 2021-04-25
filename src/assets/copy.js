@@ -1,6 +1,10 @@
 export const copy = {
   WhoIAm: {
-    chatting_with: "chatting with Shahbaz",
+    banner:   {
+      chatting_with: "Shahbaz Siddiqui",
+      info_icon: "ℹ",
+      call_icon: "✆"
+    },
     ask: {
       what_you_do: "so, what do you do?",
       where_do_you_work: "where do you work?",
@@ -12,8 +16,8 @@ export const copy = {
       what_i_do_2: "im well versed in React & Angular, see my resume for more!",
       where_i_work: "currently im working at Deloitte as part of their digital practice :)",
       something_else_to_share:
-           "i'm AWS certified, and have good exposure to server-side technologies like Node and Express.js!",
-           something_else_to_share_2: "oh, and im a master at ping pong 🏓"
+        "i'm AWS certified, and have good exposure to server-side technologies like Node and Express!",
+      something_else_to_share_2: "oh, and im a master at ping pong 🏓",
     },
   },
   WhoIActuallyAm: {

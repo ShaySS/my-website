@@ -1,0 +1,43 @@
+header {
+  border-top: 3px solid var(--dark_teal);
+  height: 100px;
+  width: 100%;
+  border-bottom: 3px solid var(--dark_teal);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light_teal);
+  padding: 0 5rem 0 5rem;
+  position: fixed;
+}
+
+.chattingWith {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons {
+  cursor: pointer;
+  transition: 400ms;
+  /* border: 3px solid transparent; */
+  border-radius: 20px;
+  font-size: 2rem;
+  font-family: "Comfortaa", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--brown);
+}
+
+.icons:last-of-type{
+    margin-left: 3rem;
+}
+
+.icons:hover {
+  /* border: 3px solid var(--dark_orange); */
+  color: var(--dark_teal);
+}
