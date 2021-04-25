@@ -26,7 +26,6 @@ header {
 .icons {
   cursor: pointer;
   transition: 400ms;
-  /* border: 3px solid transparent; */
   border-radius: 20px;
   font-size: 2rem;
   font-family: "Comfortaa", Tahoma, Geneva, Verdana, sans-serif;
@@ -38,6 +37,5 @@ header {
 }
 
 .icons:hover {
-  /* border: 3px solid var(--dark_orange); */
   color: var(--dark_teal);
 }
