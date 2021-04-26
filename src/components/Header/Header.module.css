@@ -20,16 +20,16 @@ nav {
   padding-top: 1.3rem;
 }
 
-.active{
+.active {
   color: var(--dark_orange) !important;
-  text-decoration: underline !important;
+  /* border-bottom: 3px solid var(--dark_orange); */
+  /* text-decoration: underline !important; */
 }
 
 .navLinks li a:hover {
   color: var(--dark_orange);
   transition: 0.3s;
 }
-
 
 .navLinks li a {
   color: #fff8ea;
@@ -54,10 +54,8 @@ nav {
 }
 
 .navLinks li a:hover:after,
-.navLinks li a:focus:after,
 .navLinks li a:active:after {
   left: 0;
   right: auto;
   width: 100%;
 }
-

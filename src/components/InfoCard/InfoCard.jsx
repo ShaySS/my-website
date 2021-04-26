@@ -11,10 +11,11 @@ export default function infoCard({ cardStyle, heading, body }) {
         >
           <p className={`${styles[cardStyle + "HeadingText"]}`}>{heading}</p>
         </div>
-        <div
-          className={`${styles.body} ${styles[cardStyle + "BodyBackground"]}`}
-        >
-          <p className={`${styles[cardStyle + "BodyText"]}`}>{body}</p>
+        <div className={`${styles.body} ${styles[cardStyle + "BodyBackground"]}`}>
+          <p
+            className={`${styles[cardStyle + "BodyText"]}`}
+            dangerouslySetInnerHTML={{ __html: body }}
+          ></p>
         </div>
       </div>
     </>

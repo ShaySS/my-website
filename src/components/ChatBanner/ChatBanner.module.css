@@ -23,6 +23,10 @@ header {
     justify-content: space-between;
 }
 
+.container a{
+  text-decoration: none;
+}
+
 .icons {
   cursor: pointer;
   transition: 400ms;

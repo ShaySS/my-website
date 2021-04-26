@@ -6,7 +6,7 @@ export default function Header() {
   const location = useLocation().pathname;
 
   useEffect(() => {
-    console.log(`Location changed to ${location}`);
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (

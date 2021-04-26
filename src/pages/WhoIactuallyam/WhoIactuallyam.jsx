@@ -1,6 +1,7 @@
 import React from "react";
 import InfoCard from "../../components/InfoCard/InfoCard";
 import { copy } from "../../assets/copy";
+import me from "../../assets/Me.jpg";
 import styles from "./WhoIactuallyam.module.css";
 
 export default function WhoIactuallyam() {
@@ -9,24 +10,32 @@ export default function WhoIactuallyam() {
   return (
     <>
       <div className={styles.intro}>
-        <div>pic of me</div>
-        <div>
-          <h1>Shahbaz,</h1>
-          <h2>{`outside the <div id='box'/>`}</h2>
-          <div>
-            i’m a big believer in being a well-rounded person, here’s me outside of the coding world
-          </div>
+        <div className={styles.imageContainer}>
+          <img src={me} alt="pic of me" className={styles.image}></img>
+        </div>
+        <div className={styles.blurb}>
+          <h1>{data.blurb.Shahbaz}</h1>
+          <h2>{data.blurb.outside_the_divbox}</h2>
+          <p className={styles.wellRounded}>{data.blurb.well_rounded}</p>
         </div>
       </div>
-      <InfoCard cardStyle="primary" heading={data.primary.heading} body={data.primary.body} />
+      <InfoCard
+        cardStyle="primary"
+        heading={data.cards.primary.heading}
+        body={data.cards.primary.body}
+      />
       <div className={styles.right}>
         <InfoCard
           cardStyle="secondary"
-          heading={data.secondary.heading}
-          body={data.secondary.body}
+          heading={data.cards.secondary.heading}
+          body={data.cards.secondary.body}
         />
       </div>
-      <InfoCard cardStyle="tertiary" heading={data.tertiary.heading} body={data.tertiary.body} />
+      <InfoCard
+        cardStyle="tertiary"
+        heading={data.cards.tertiary.heading}
+        body={data.cards.tertiary.body}
+      />
     </>
   );
 }
