@@ -22,15 +22,15 @@
   padding: 20px;
 }
 
-.speechRight {
-  background-image: url("../../assets/speechRight.svg");
+.speechLeft {
+  background-image: url("../../assets/homeBubbleLeft.svg");
   position: absolute;
   left: 32rem;
   top: 11rem;
 }
 
-.speechLeft {
-  background-image: url("../../assets/speechLeft.svg");
+.speechRight {
+  background-image: url("../../assets/homeBubbleRight.svg");
   position: absolute;
   left: 35rem;
   top: 17rem;
@@ -44,13 +44,13 @@
   top: 10rem;
 }
 
-.textRight {
+.textLeft {
   color: #c8ddc3;
   text-decoration: none;
   font-size: 1.4rem;
   margin: 0;
 }
-.textLeft {
+.textRight {
   color: #61988e;
   text-decoration: none;
   font-size: 1.4rem;

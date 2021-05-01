@@ -1,4 +1,10 @@
 export const copy = {
+  Home: {
+    hey: "hey, i'm ",
+    Shay: "Shay",
+    im_a: "i'm a ",
+    front_end_dev: "front end developer",
+  },
   WhoIAm: {
     banner: {
       chatting_with: "Shay Siddiqui",
