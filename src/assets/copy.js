@@ -1,7 +1,7 @@
 export const copy = {
   WhoIAm: {
     banner: {
-      chatting_with: "Shahbaz Siddiqui",
+      chatting_with: "Shay Siddiqui",
       info_icon: "ℹ",
       call_icon: "✆",
     },
@@ -23,7 +23,7 @@ export const copy = {
   },
   WhoIActuallyAm: {
     blurb: {
-      Shahbaz: "Shahbaz,",
+      Shay: "Shay,",
       outside_the_divbox: "outside the <div id='box'/>",
       well_rounded:
         "i’m a big believer in being a well-rounded person, here’s me outside of the coding world",
@@ -37,7 +37,7 @@ export const copy = {
       secondary: {
         heading: "producer",
         body:
-          "although i didn’t grow up playing instruments, in university i became fascinated with the piano and later went on to produce songs, check me out on <a href='https://soundcloud.com/shahbazs' target='_blank'>SoundCloud</a> ;)",
+          "although i didn’t grow up playing instruments, in university i became fascinated with the piano and later went on to produce songs, check me out on <a href='https://soundcloud.com/Shays' target='_blank'>soundcloud</a> ;)",
       },
       tertiary: {
         heading: "blacksmith",

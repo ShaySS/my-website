@@ -14,7 +14,7 @@ export default function WhoIactuallyam() {
           <img src={me} alt="pic of me" className={styles.image}></img>
         </div>
         <div className={styles.blurb}>
-          <h1>{data.blurb.Shahbaz}</h1>
+          <h1>{data.blurb.Shay}</h1>
           <h2>{data.blurb.outside_the_divbox}</h2>
           <p className={styles.wellRounded}>{data.blurb.well_rounded}</p>
         </div>

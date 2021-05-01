@@ -12,7 +12,7 @@ export default function Home() {
         <p className={styles.textRight}>
           hey, i'm{" "}
           <Link to="/whoIactuallyam" className={`${styles.underline} ${styles.textRight}`}>
-            Shahbaz
+            Shay
           </Link>
         </p>
       </div>
