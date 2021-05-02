@@ -25,14 +25,9 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/whoIactuallyam"
-              className={location === `/whoIactuallyam` ? styles.active : undefined}
+              to="/whatIdo"
+              className={location === `/whatIdo` ? styles.active : undefined}
             >
-              who i actually am
-            </Link>
-          </li>
-          <li>
-            <Link to="/whatIdo" className={location === `/whatIdo` ? styles.active : undefined}>
               what i do
             </Link>
           </li>

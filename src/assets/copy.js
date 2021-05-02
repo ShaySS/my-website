@@ -1,9 +1,9 @@
 export const copy = {
   Home: {
     hey: "hey, i'm ",
-    Shay: "<a href='/whoIactuallyam' class='underline textLeft'> Shay </a>",
+    Shay: "<a href='/whoIam' class='underline'> Shay </a>",
     im_a: "i'm a ",
-    front_end_dev: "front end developer",
+    front_end_dev: "<a href='/whatIdo' class='underline'>front end developer</a>" ,
   },
   WhoIAm: {
     banner: {
@@ -27,7 +27,7 @@ export const copy = {
       something_else_to_share_2: "oh, and im a master at ping pong 🏓",
     },
   },
-  WhoIActuallyAm: {
+  WhatIdo: {
     blurb: {
       Shay: "Shay,",
       outside_the_divbox: "outside the <div id='box'/>",

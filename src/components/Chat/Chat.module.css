@@ -68,3 +68,42 @@ a[class^="test"]:after{
 .colorRight a:hover:after {
   transform: scaleX(1);
 }
+
+/*  */
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  transition: 0.8s ease-out;
+}
+
+.underline:hover {
+  color: #2a293b;
+  transition: 0.3s;
+
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  top: 25px;
+  background: #2a293b;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.underline:hover {
+  cursor: pointer;
+}
+
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}

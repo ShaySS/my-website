@@ -10,20 +10,11 @@ export default function Home() {
   const data = copy.Home;
   return (
     <>
-      {/* use chat component */}
       <img src={me} alt="pic of me" className={styles.picOfMe}></img>
-
       <Chat homeLeft content={`${data.hey} ${data.Shay}`} />
 
       <img src={devscreen} alt="Front-end developer" id={styles.dev}></img>
-      <div className={styles.rightSpeechBubble}>
-        <p className={styles.textRight}>
-          {data.im_a}
-          <Link to="/whoIam" className={`${styles.underline} ${styles.textRight}`}>
-            {data.front_end_dev}
-          </Link>
-        </p>
-      </div>
+      <Chat homeRight content={`${data.im_a} ${data.front_end_dev}`} />
     </>
   );
 }

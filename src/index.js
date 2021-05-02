@@ -7,19 +7,17 @@ import reportWebVitals from "./reportWebVitals";
 //Page imports
 import Home from "./pages/Home/Home";
 import WhoIam from "./pages/WhoIam/WhoIam";
-import WhoIactuallyam from "./pages/WhoIactuallyam/WhoIactuallyam";
 import WhatIdo from "./pages/WhatIdo/WhatIdo";
 import Wheretofindme from "./pages/Wheretofindme/Wheretofindme";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-        <Header />
-        <Route path="/" exact component={Home} />
-        <Route path="/whoIam" component={WhoIam} />
-        <Route path="/whoIactuallyam" component={WhoIactuallyam} />
-        <Route path="/whatIdo" component={WhatIdo} />
-        <Route path="/wheretofindme" component={Wheretofindme} />
+      <Header />
+      <Route path="/" exact component={Home} />
+      <Route path="/whoIam" component={WhoIam} />
+      <Route path="/whatIdo" component={WhatIdo} />
+      <Route path="/wheretofindme" component={Wheretofindme} />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
