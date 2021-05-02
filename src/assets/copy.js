@@ -5,7 +5,7 @@ export const copy = {
     im_a: "i'm a ",
     front_end_dev: "<a href='/whatIdo' class='underline'>front end developer</a>" ,
   },
-  WhoIAm: {
+  WhatIdo: {
     banner: {
       chatting_with: "Shay Siddiqui",
       info_icon: "ℹ",
@@ -27,7 +27,7 @@ export const copy = {
       something_else_to_share_2: "oh, and im a master at ping pong 🏓",
     },
   },
-  WhatIdo: {
+  WhoIam: {
     blurb: {
       Shay: "Shay,",
       outside_the_divbox: "outside the <div id='box'/>",

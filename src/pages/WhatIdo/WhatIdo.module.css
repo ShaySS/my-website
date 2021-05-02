@@ -1,33 +1,32 @@
-.right {
-  display: flex;
-  justify-content: flex-end;
+.gridContainer {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: 1fr;
+  column-gap: 10px;
 }
 
-.intro {
-  display: flex;
-  padding-top: 5rem;
-  justify-content: center;
-  margin-bottom: 5rem;
+.banner { 
+  margin-bottom: 10rem;
 }
 
-.blurb {
-  align-self: center;
+.question{
+  padding-left: 15px;
 }
 
-.imageContainer {
-  width: 40rem;
-  height: 18rem;
-  margin-right: 3rem;
-  overflow: hidden;
+.answer{
+  justify-self: end;
+  padding-right: 15px;
 }
 
-.image {
-  width: 100%;
-  object-position: 0 -66px;
-  transform: scale(1.5);
+.padded {
+  padding-right: 75px;
 }
 
-.wellRounded {
-  font-size: 1rem;
-  color: var(--brown);
+.avatarAlign{
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+
+.myAvatarAlign{
+  padding-bottom: 40px;
 }

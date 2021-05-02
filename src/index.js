@@ -6,8 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 
 //Page imports
 import Home from "./pages/Home/Home";
-import WhoIam from "./pages/WhoIam/WhoIam";
 import WhatIdo from "./pages/WhatIdo/WhatIdo";
+import WhoIam from "./pages/WhoIam/WhoIam";
 import Wheretofindme from "./pages/Wheretofindme/Wheretofindme";
 
 ReactDOM.render(

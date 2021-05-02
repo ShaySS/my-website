@@ -1,51 +1,41 @@
 import React from "react";
-import styles from "./WhoIam.module.css";
-import Chat from "../../components/Chat/Chat";
-import { ReactComponent as Avatar } from "../../assets/female_avatar.svg";
-import { ReactComponent as Me } from "../../assets/chatMe.svg";
+import InfoCard from "../../components/InfoCard/InfoCard";
 import { copy } from "../../assets/copy";
-import { ChatBanner } from "../../components/ChatBanner/ChatBanner";
+import me from "../../assets/Me.jpg";
+import styles from "./WhoIam.module.css";
 
-export default function whoIam() {
-  const data = copy.WhoIAm;
+export default function WhoIam() {
+  const data = copy.WhoIam;
 
   return (
     <>
-      <div className={styles.gridContainer}>
-        <div className={styles.banner}>
-          <ChatBanner content={data.banner.chatting_with} />
+      <div className={styles.intro}>
+        <div className={styles.imageContainer}>
+          <img src={me} alt="pic of me" className={styles.image}></img>
         </div>
-        <div className={styles.question}>
-          <Avatar className={styles.avatarAlign}     />
-          <Chat leftSm content={data.ask.what_you_do} />
-        </div>
-        <div className={styles.answer}>
-          <Chat right content={data.answer.what_i_do} />
-          <Me className={styles.myAvatarAlign} />
-        </div>
-        <div className={`${styles.answer} ${styles.padded}`}>
-          <Chat right content={data.answer.what_i_do_2} />
-        </div>
-        <div className={styles.question}>
-          <Avatar className={styles.avatarAlign}     />
-          <Chat leftSm content={data.ask.where_do_you_work} />
-        </div>
-        <div className={styles.answer}>
-          <Chat right content={data.answer.where_i_work} />
-          <Me className={styles.myAvatarAlign} />
-        </div>
-        <div className={styles.question}>
-          <Avatar className={styles.avatarAlign}     />
-          <Chat leftLg content={data.ask.anything_else} />
-        </div>
-        <div className={styles.answer}>
-          <Chat right content={data.answer.something_else_to_share} />
-          <Me className={styles.myAvatarAlign} />
-        </div>
-        <div className={`${styles.answer} ${styles.padded}`}>
-          <Chat right content={data.answer.something_else_to_share_2} />
+        <div className={styles.blurb}>
+          <h1>{data.blurb.Shay}</h1>
+          <h2>{data.blurb.outside_the_divbox}</h2>
+          <p className={styles.wellRounded}>{data.blurb.well_rounded}</p>
         </div>
       </div>
+      <InfoCard
+        cardStyle="primary"
+        heading={data.cards.primary.heading}
+        body={data.cards.primary.body}
+      />
+      <div className={styles.right}>
+        <InfoCard
+          cardStyle="secondary"
+          heading={data.cards.secondary.heading}
+          body={data.cards.secondary.body}
+        />
+      </div>
+      <InfoCard
+        cardStyle="tertiary"
+        heading={data.cards.tertiary.heading}
+        body={data.cards.tertiary.body}
+      />
     </>
   );
 }

@@ -17,10 +17,10 @@ export const ChatBanner = ({ content }) => {
         </div>
         <div className={styles.container}>
           <Link to="/whoIactuallyam">
-            <span className={styles.icons}>{data.WhoIAm.banner.info_icon}</span>
+            <span className={styles.icons}>{data.WhatIdo.banner.info_icon}</span>
           </Link>
           <Link to="/wheretofindme">
-            <span className={styles.icons}>{data.WhoIAm.banner.call_icon}</span>
+            <span className={styles.icons}>{data.WhatIdo.banner.call_icon}</span>
           </Link>
         </div>
       </header>

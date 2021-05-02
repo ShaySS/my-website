@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Home.module.css";
 import me from "../../assets/me2.jpg";
 import devscreen from "../../assets/devscreen.svg";
-import { Link } from "react-router-dom";
 import { copy } from "../../assets/copy";
 import Chat from "../../components/Chat/Chat";
 
