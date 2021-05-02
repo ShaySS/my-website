@@ -1,7 +1,7 @@
 export const copy = {
   Home: {
     hey: "hey, i'm ",
-    Shay: "Shay",
+    Shay: "<a href='/whoIactuallyam' class='underline textLeft'> Shay </a>",
     im_a: "i'm a ",
     front_end_dev: "front end developer",
   },
@@ -23,7 +23,7 @@ export const copy = {
       where_i_work:
         "currently im working at <span id='Deloitte'>Deloitte</span> as part of their digital practice :)",
       something_else_to_share:
-        "i'm <a href='AWS_Cert.pdf' target='_blank' id='aws'>AWS</a> certified, and have good exposure to server-side technologies like Node and Express!",
+        "i'm <a href='AWS_Cert.pdf' target='_blank' class='test'>AWS</a> certified, and have good exposure to server-side technologies like Node and Express!",
       something_else_to_share_2: "oh, and im a master at ping pong 🏓",
     },
   },

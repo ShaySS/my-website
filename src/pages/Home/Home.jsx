@@ -4,23 +4,19 @@ import me from "../../assets/me2.jpg";
 import devscreen from "../../assets/devscreen.svg";
 import { Link } from "react-router-dom";
 import { copy } from "../../assets/copy";
+import Chat from "../../components/Chat/Chat";
 
 export default function Home() {
   const data = copy.Home;
   return (
     <>
-      <img src={me} alt="pic of me" id={styles.me}></img>
-      <div className={`${styles.speech} ${styles.speechLeft}`}>
-        <p className={styles.textLeft}>
-          {data.hey}
-          <Link to="/whoIactuallyam" className={`${styles.underline} ${styles.textLeft}`}>
-            {data.Shay}
-          </Link>
-        </p>
-      </div>
+      {/* use chat component */}
+      <img src={me} alt="pic of me" className={styles.picOfMe}></img>
+
+      <Chat homeLeft content={`${data.hey} ${data.Shay}`} />
 
       <img src={devscreen} alt="Front-end developer" id={styles.dev}></img>
-      <div className={`${styles.speech} ${styles.speechRight}`}>
+      <div className={styles.rightSpeechBubble}>
         <p className={styles.textRight}>
           {data.im_a}
           <Link to="/whoIam" className={`${styles.underline} ${styles.textRight}`}>

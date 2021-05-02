@@ -5,38 +5,25 @@
   left: 52rem;
 }
 
-#picSection {
-  height: 100vh;
-  width: 50vw;
-}
-
-#content {
-  height: 100vh;
-  width: 50vw;
-}
-
-.speech {
+.leftSpeechBubble {
   background-repeat: no-repeat;
   height: 75px;
   width: 375px;
   padding: 20px;
-}
-
-.speechLeft {
   background-image: url("../../assets/homeBubbleLeft.svg");
   position: absolute;
   left: 32rem;
   top: 11rem;
 }
 
-.speechRight {
+.rightSpeechBubble {
+  composes: leftSpeechBubble;
   background-image: url("../../assets/homeBubbleRight.svg");
-  position: absolute;
   left: 35rem;
   top: 17rem;
 }
 
-#me {
+.picOfMe {
   height: 23rem;
   border-radius: 50%;
   position: absolute;
@@ -49,7 +36,9 @@
   text-decoration: none;
   font-size: 1.4rem;
   margin: 0;
+  /* padding-left: 10px; */
 }
+
 .textRight {
   color: #61988e;
   text-decoration: none;
@@ -67,6 +56,7 @@
 .underline:hover {
   color: #2a293b;
   transition: 0.3s;
+
 }
 .underline:after {
   content: "";

@@ -5,3 +5,4 @@ accessibility
 responsiveness
 add resume
 header: nav weird underline, the active underline
+Fix 'AWS' underline animation
