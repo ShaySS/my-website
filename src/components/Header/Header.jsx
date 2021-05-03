@@ -19,13 +19,13 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/whoIam" className={location === `/whoIam` ? styles.active : undefined}>
-              who i am
+            <Link to="/whatIdo" className={location === `/whatIdo` ? styles.active : undefined}>
+              what i do
             </Link>
           </li>
           <li>
-            <Link to="/whatIdo" className={location === `/whatIdo` ? styles.active : undefined}>
-              what i do
+            <Link to="/whoIam" className={location === `/whoIam` ? styles.active : undefined}>
+              who i am
             </Link>
           </li>
           <li>

@@ -16,7 +16,7 @@ export const ChatBanner = ({ content }) => {
           <h2 className={styles.chattingWith}>{content}</h2>
         </div>
         <div className={styles.container}>
-          <Link to="/whoIactuallyam">
+          <Link to="/whoIam">
             <span className={styles.icons}>{data.WhatIdo.banner.info_icon}</span>
           </Link>
           <Link to="/wheretofindme">

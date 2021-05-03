@@ -10,10 +10,14 @@ export default function Home() {
   return (
     <>
       <img src={me} alt="pic of me" className={styles.picOfMe}></img>
-      <Chat homeLeft content={`${data.hey} ${data.Shay}`} />
+      <div className={styles.leftBubble}>
+        <Chat homeLeft content={`${data.hey} ${data.Shay}`} />
+      </div>
 
-      <img src={devscreen} alt="Front-end developer" id={styles.dev}></img>
-      <Chat homeRight content={`${data.im_a} ${data.front_end_dev}`} />
+      <img src={devscreen} alt="Front-end developer" className={styles.devscreen}></img>
+      <div className={styles.rightBubble}>
+        <Chat homeRight content={`${data.im_a} ${data.front_end_dev}`} />
+      </div>
     </>
   );
 }

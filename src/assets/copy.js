@@ -1,9 +1,9 @@
 export const copy = {
   Home: {
     hey: "hey, i'm ",
-    Shay: "<a href='/whoIam' class='underline'> Shay </a>",
-    im_a: "i'm a ",
-    front_end_dev: "<a href='/whatIdo' class='underline'>front end developer</a>" ,
+    Shay: "Shay",
+    im_a: "<span>i'm a </span>",
+    front_end_dev: "<a href='/whatIdo' class='underline' id='FED'>front end developer</a>",
   },
   WhatIdo: {
     banner: {
@@ -19,12 +19,14 @@ export const copy = {
     answer: {
       what_i_do:
         "im a toronto-based engineer that's been developing in front-end for just over 2 years",
-      what_i_do_2: "im well versed in React & Angular, see my resume for more!",
+      what_i_do_2:
+        "im well versed in React & Angular, see my <a href='Siddiqui_dev_Resume.pdf' target='_blank' class='resume'>resume</a> for more!",
       where_i_work:
-        "currently im working at <span id='Deloitte'>Deloitte</span> as part of their digital practice :)",
+        "currently im working at Deloitte as part of their digital practice :)",
       something_else_to_share:
-        "i'm <a href='AWS_Cert.pdf' target='_blank' class='test'>AWS</a> certified, and have good exposure to server-side technologies like Node and Express!",
-      something_else_to_share_2: "oh, and im a master at ping pong 🏓",
+        "i'm <a href='AWS_Cert.pdf' target='_blank' class='AWS'>AWS</a> certified, and have good exposure to server-side technologies like Node and Express!",
+      something_else_to_share_2:
+        "oh, and im a master at ping pong <a href='/whoIam' class='pingPong'>🏓</a>",
     },
   },
   WhoIam: {

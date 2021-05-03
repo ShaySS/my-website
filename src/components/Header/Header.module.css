@@ -22,14 +22,8 @@ nav {
 
 .active {
   color: var(--dark_orange) !important;
-  /* border-bottom: 3px solid var(--dark_orange); */
-  /* text-decoration: underline !important; */
 }
 
-.navLinks li a:hover {
-  color: var(--dark_orange);
-  transition: 0.3s;
-}
 
 .navLinks li a {
   color: #fff8ea;
@@ -40,21 +34,24 @@ nav {
   overflow: hidden;
 }
 
+.navLinks li a:hover {
+  color: var(--dark_orange);
+}
+
 .navLinks li a:after {
   content: "";
   position: absolute;
-  right: 0;
-  width: 0;
-  top: 20px;
   height: 2px;
+  width: 0;
+  right: 0;
+  top: 20px;
   background: var(--dark_orange);
   transition-property: width;
   transition-duration: 0.4s;
   transition-timing-function: ease-out;
 }
 
-.navLinks li a:hover:after,
-.navLinks li a:active:after {
+.navLinks li a:hover:after {
   left: 0;
   right: auto;
   width: 100%;

@@ -6,3 +6,4 @@ responsiveness
 add resume
 header: nav weird underline, the active underline
 Fix 'AWS' underline animation
+whoiam blurb in wrong location in copy

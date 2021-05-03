@@ -4,86 +4,99 @@
   min-height: 100px;
 }
 
-.space {
-  padding: 15px;
-}
+/* * Home Bubbles */
 
-.homeBubbleLeft{
-  width: 480px;
+.homeBubbleLeft {
+  composes: bubble;
+  width: 210px;
   background-image: url("../../assets/homeBubbleLeft.svg");
 }
 
-.homeBubbleRight{
-  width: 480px;
+.homeBubbleRight {
+  composes: bubble;
+  width: 370px;
   background-image: url("../../assets/homeBubbleRight.svg");
 }
 
+.homeLightText {
+  color: var(--light_teal);
+  padding-left: 28px;
+}
+
+.homeDarkText {
+  color: var(--dark_teal);
+  padding-left: 30px;
+}
+
+/* * Conversation bubbles */
+
 .bubbleRight {
+  composes: bubble;
   height: 150px;
   width: 640px;
   background-image: url("../../assets/bubbleRight.svg");
 }
 
 .bubbleLeftSm {
+  composes: bubble;
   width: 310px;
   background-image: url("../../assets/bubbleLeftSm.svg");
 }
 
 .bubbleLeftLg {
+  composes: bubble;
   width: 480px;
   background-image: url("../../assets/bubbleLeftLg.svg");
 }
 
-.colorRight {
+.lightText {
   color: var(--light_teal);
   padding: 15px 50px 0 20px;
 }
 
-.colorLeft {
+.darkText {
   color: var(--dark_teal);
   padding: 10px 0 0 40px;
 }
 
-.colorRight span {
-  color: #97db17;
-  font-weight: bold;
+a[class^="pingPong"] {
+  text-decoration: none;
 }
 
-a[class^="test"] {
+a[class^="AWS"],
+a[class^="resume"] {
   display: inline-block;
   color: #ff9900;
-  text-decoration: none;
+  transition: text-decoration 250ms;
+  text-decoration: underline solid transparent;
   font-weight: bold;
 }
 
-a[class^="test"]:after{
-  display: block;
-  content: "";
-  border-bottom: solid 3px #ff9900;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-  transform-origin: 0% 50%;
+a[class^="AWS"]:hover, a[class^="resume"]:hover {
+  text-decoration: underline;
 }
 
-.colorRight a:hover:after {
-  transform: scaleX(1);
+a[id^="FED"] {
+  color: var(--dark_teal);
 }
 
-/*  */
+/* *Purple underline animation on home page */
 
-.underline {
+a[class^="underline"] {
+  text-decoration: none;
   display: inline;
   position: relative;
   overflow: hidden;
   transition: 0.8s ease-out;
 }
 
-.underline:hover {
+a[class^="underline"]:hover {
   color: #2a293b;
   transition: 0.3s;
-
+  cursor: pointer;
 }
-.underline:after {
+
+a[class^="underline"]:after {
   content: "";
   position: absolute;
   right: 0;
@@ -96,13 +109,7 @@ a[class^="test"]:after{
   transition-timing-function: ease-out;
 }
 
-.underline:hover {
-  cursor: pointer;
-}
-
-.underline:hover:after,
-.underline:focus:after,
-.underline:active:after {
+a[class^="underline"]:hover:after {
   left: 0;
   right: auto;
   width: 100%;

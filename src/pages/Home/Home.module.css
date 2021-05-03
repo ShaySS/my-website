@@ -1,19 +1,8 @@
-#dev {
+.devscreen {
   width: 32rem;
   position: absolute;
   top: 16rem;
   left: 52rem;
-}
-
-.rightSpeechBubble {
-  position: absolute;
-  background-repeat: no-repeat;
-  height: 75px;
-  width: 375px;
-  padding: 20px;
-  background-image: url("../../assets/homeBubbleRight.svg");
-  left: 35rem;
-  top: 17rem;
 }
 
 .picOfMe {
@@ -24,11 +13,14 @@
   top: 10rem;
 }
 
-.textRight {
-  color: #61988e;
-  text-decoration: none;
-  font-size: 1.4rem;
-  margin: 0;
+.leftBubble {
+  position: absolute;
+  top: 10rem;
+  left: 30rem;
 }
 
-
+.rightBubble {
+  position: absolute;
+  top: 18rem;
+  left: 40rem;
+}
