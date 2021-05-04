@@ -15,6 +15,7 @@
 /* Primary Card */
 
 .primaryHeadingBackground {
+  composes: heading;
   background-color: var(--dark_purple);
 }
 
@@ -25,13 +26,13 @@
 }
 
 .primaryBodyBackground {
+  composes: body;
   background-color: var(--light_purple);
 }
 
 .primaryBodyText {
   color: var(--dark_purple);
   margin-top: 1rem;
-  margin-left: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
   text-align: justify;
@@ -41,50 +42,43 @@
 /* Secondary Card */
 
 .secondaryHeadingBackground {
+  composes: heading;
   background-color: var(--dark_orange);
 }
 
 .secondaryHeadingText {
+  composes: primaryHeadingText;
   color: var(--light_orange);
-  text-align: center;
-  margin-top: 1rem;
 }
 
 .secondaryBodyBackground {
+  composes: body;
   background-color: var(--light_orange);
 }
 
 .secondaryBodyText {
+  composes: primaryBodyText;
   color: var(--dark_orange);
-  margin-top: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 /* Tertiary Card */
 
 .tertiaryHeadingBackground {
+  composes: heading;
   background-color: var(--dark_teal);
 }
 
 .tertiaryHeadingText {
+  composes: primaryHeadingText;
   color: var(--light_teal);
-  text-align: center;
-  margin-top: 1rem;
 }
 
 .tertiaryBodyBackground {
+  composes: body;
   background-color: var(--light_teal);
 }
 
 .tertiaryBodyText {
+  composes: primaryBodyText;
   color: var(--dark_teal);
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  text-align: justify;
-  text-justify: inter-word;
 }
