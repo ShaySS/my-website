@@ -9,6 +9,8 @@ const Chat2 = ({ content, BR, BL, TR, TL }) => {
   const bubbleSide = () => {
     if (BR) return styles.bubbleBR;
     else if (BL) return styles.bubbleBL;
+    else if (TR) return styles.bubbleTR;
+    else if (TL) return styles.bubbleTL;
   };
 
   const clickHandler = (e) => {

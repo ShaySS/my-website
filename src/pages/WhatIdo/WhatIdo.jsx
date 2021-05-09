@@ -17,35 +17,34 @@ export default function whatIdo() {
           <ChatBanner content={data.banner.chatting_with} />
         </div>
         <div className={styles.question}>
-          {/* <Chat leftSm content={data.ask.what_you_do} /> */}
           <Avatar className={styles.avatarAlign} />
-          <Chat2 BL content={data.ask.what_you_do}></Chat2>
+          <Chat2 TL content={data.ask.what_you_do}></Chat2>
         </div>
         <div className={styles.answer}>
-          <Chat right content={data.answer.what_i_do} />
+          <Chat2 TR content={data.answer.what_i_do} />
           <Me className={styles.myAvatarAlign} />
         </div>
         <div className={`${styles.answer} ${styles.padded}`}>
-          <Chat right content={data.answer.what_i_do_2} />
+          <Chat2 TR content={data.answer.what_i_do_2} />
         </div>
         <div className={styles.question}>
           <Avatar className={styles.avatarAlign} />
-          <Chat leftSm content={data.ask.where_do_you_work} />
+          <Chat2 TL content={data.ask.where_do_you_work} />
         </div>
         <div className={styles.answer}>
-          <Chat right content={data.answer.where_i_work} />
+          <Chat2 TR content={data.answer.where_i_work} />
           <Me className={styles.myAvatarAlign} />
         </div>
         <div className={styles.question}>
           <Avatar className={styles.avatarAlign} />
-          <Chat leftLg content={data.ask.anything_else} />
+          <Chat2 TL content={data.ask.anything_else} />
         </div>
         <div className={styles.answer}>
-          <Chat right content={data.answer.something_else_to_share} />
+          <Chat2 TR content={data.answer.something_else_to_share} />
           <Me className={styles.myAvatarAlign} />
         </div>
         <div className={`${styles.answer} ${styles.padded}`}>
-          <Chat right content={data.answer.something_else_to_share_2} />
+          <Chat2 TR content={data.answer.something_else_to_share_2} />
         </div>
       </div>
     </>

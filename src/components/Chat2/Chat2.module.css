@@ -1,14 +1,14 @@
 .bubble {
   position: relative;
-  border-radius: 14px;
+  border-radius: 20px;
   height: auto;
   min-height: 2.5rem;
-  max-width: 30rem;
+  max-width: 40rem;
   display: inline-block;
 }
 
 .bubble > p {
-  padding: 10px;
+  padding: 12px;
   margin: 0;
   word-wrap: break-word;
 }
@@ -32,7 +32,7 @@
   border-radius: 5px;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 14px solid var(--dark_teal);
+  border-bottom: 25px solid var(--dark_teal);
 }
 
 .bubbleBL {
@@ -54,5 +54,49 @@
   border-radius: 5px;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid var(--light_teal);
+  border-bottom: 20px solid var(--light_teal);
+}
+
+.bubbleTL {
+  composes: bubble;
+  background-color: var(--light_teal);
+}
+
+.bubbleTL > p {
+  color: var(--dark_teal);
+}
+
+.bubbleTL::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: -7px;
+  border-radius: 5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid var(--light_teal);
+}
+
+.bubbleTR {
+  composes: bubble;
+  background-color: var(--dark_teal);
+}
+
+.bubbleTR > p {
+  color: var(--light_teal);
+}
+
+.bubbleTR::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -7px;
+  border-radius: 5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid var(--dark_teal);
 }
