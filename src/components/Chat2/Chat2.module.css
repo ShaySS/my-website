@@ -100,3 +100,59 @@
   border-right: 15px solid transparent;
   border-top: 25px solid var(--dark_teal);
 }
+
+/* * Animations */
+
+/* Home page */
+
+.bubbleBR > p > a {
+  text-decoration: none;
+  /* display: inline; */
+  position: relative;
+  /* overflow: hidden; */
+  transition: 0.8s ease-out;
+  color: var(--light_teal);
+}
+
+.bubbleBR > p > a:hover {
+  color: #2a293b;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.bubbleBR > p > a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  top: 25px;
+  background: #2a293b;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.bubbleBR > p > a:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+/* AWS/Resume */
+a[class^="AWS"],
+a[class^="resume"] {
+  display: inline-block;
+  color: #ff9900;
+  transition: text-decoration 250ms;
+  text-decoration: underline solid transparent;
+  font-weight: bold;
+}
+
+a[class^="AWS"]:hover, a[class^="resume"]:hover {
+  text-decoration: underline;
+}
+
+a[class^="pingPong"] {
+    text-decoration: none;
+  }
