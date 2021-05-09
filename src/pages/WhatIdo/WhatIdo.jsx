@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./WhatIdo.module.css";
 import Chat from "../../components/Chat/Chat";
+import Chat2 from "../../components/Chat2/Chat2";
 import { ReactComponent as Avatar } from "../../assets/female_avatar.svg";
 import { ReactComponent as Me } from "../../assets/chatMe.svg";
 import { copy } from "../../assets/copy";
@@ -16,8 +17,9 @@ export default function whatIdo() {
           <ChatBanner content={data.banner.chatting_with} />
         </div>
         <div className={styles.question}>
-          <Avatar className={styles.avatarAlign}     />
-          <Chat leftSm content={data.ask.what_you_do} />
+          {/* <Chat leftSm content={data.ask.what_you_do} /> */}
+          <Avatar className={styles.avatarAlign} />
+          <Chat2 BL content={data.ask.what_you_do}></Chat2>
         </div>
         <div className={styles.answer}>
           <Chat right content={data.answer.what_i_do} />
@@ -27,7 +29,7 @@ export default function whatIdo() {
           <Chat right content={data.answer.what_i_do_2} />
         </div>
         <div className={styles.question}>
-          <Avatar className={styles.avatarAlign}     />
+          <Avatar className={styles.avatarAlign} />
           <Chat leftSm content={data.ask.where_do_you_work} />
         </div>
         <div className={styles.answer}>
@@ -35,7 +37,7 @@ export default function whatIdo() {
           <Me className={styles.myAvatarAlign} />
         </div>
         <div className={styles.question}>
-          <Avatar className={styles.avatarAlign}     />
+          <Avatar className={styles.avatarAlign} />
           <Chat leftLg content={data.ask.anything_else} />
         </div>
         <div className={styles.answer}>

@@ -77,7 +77,7 @@ a[class^="AWS"]:hover, a[class^="resume"]:hover {
 }
 
 a[id^="FED"] {
-  color: var(--dark_teal);
+  color: var(--light_teal);
 }
 
 /* *Purple underline animation on home page */

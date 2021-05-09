@@ -1,0 +1,58 @@
+.bubble {
+  position: relative;
+  border-radius: 14px;
+  height: auto;
+  min-height: 2.5rem;
+  max-width: 30rem;
+  display: inline-block;
+}
+
+.bubble > p {
+  padding: 10px;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.bubbleBR {
+  composes: bubble;
+  background-color: var(--dark_teal);
+}
+
+.bubbleBR > p {
+  color: var(--light_teal);
+}
+
+.bubbleBR::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: -7px;
+  border-radius: 5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 14px solid var(--dark_teal);
+}
+
+.bubbleBL {
+  composes: bubble;
+  background-color: var(--light_teal);
+}
+
+.bubbleBL > p {
+  color: var(--dark_teal);
+}
+
+.bubbleBL::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: -7px;
+  border-radius: 5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--light_teal);
+}
