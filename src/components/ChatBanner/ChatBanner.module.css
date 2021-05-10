@@ -18,13 +18,13 @@ header {
   margin-left: 1rem;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.container a{
+.container a {
   text-decoration: none;
 }
 
@@ -37,10 +37,22 @@ header {
   color: var(--brown);
 }
 
-.icons:last-of-type{
-    margin-left: 3rem;
+.icons:last-of-type {
+  margin-left: 3rem;
 }
 
 .icons:hover {
   color: var(--dark_teal);
+}
+
+@media only screen and (max-width: 457px) {
+  .icons:last-of-type {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 457px) {
+  h2 {
+    font-size: 1.2rem;
+  }
 }

@@ -3,8 +3,10 @@ import styles from "./WhatIdo.module.css";
 import Chat2 from "../../components/Chat2/Chat2";
 import { ReactComponent as Avatar } from "../../assets/female_avatar.svg";
 import { ReactComponent as Me } from "../../assets/chatMe.svg";
+import { ReactComponent as Send } from "../../assets/send.svg";
 import { copy } from "../../assets/copy";
 import { ChatBanner } from "../../components/ChatBanner/ChatBanner";
+import { Link } from "react-router-dom";
 
 export default function whatIdo() {
   const data = copy.WhatIdo;
@@ -44,6 +46,12 @@ export default function whatIdo() {
         </div>
         <div className={`${styles.answer} ${styles.padded}`}>
           <Chat2 TR content={data.answer.something_else_to_share_2} />
+        </div>
+        <div className={styles.sendAMessage}>
+          <input type="text" placeholder={data.send_a_msg} />
+          <Link to="/wheretofindme">
+            <Send />
+          </Link>
         </div>
       </div>
     </>

@@ -26,6 +26,7 @@ export const copy = {
       something_else_to_share_2:
         "oh, and im a master at ping pong <a href='/whoIam' class='pingPong'>🏓</a>",
     },
+    send_a_msg: "Send a message...",
   },
   WhoIam: {
     blurb: {

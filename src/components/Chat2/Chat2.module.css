@@ -1,7 +1,7 @@
 .bubble {
   position: relative;
   border-radius: 20px;
-  height: auto;
+  height: fit-content;
   min-height: 2.5rem;
   max-width: 40rem;
   display: inline-block;
