@@ -51,17 +51,37 @@
   padding-bottom: 5vw;
 }
 
-.cards a{
+.cards a {
   color: var(--dark_purple);
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: 350ms;
+  text-decoration: none;
+  position: relative;
+  transition: 0.8s ease-out;
 }
 
 .cards a:hover{
-  color: var(--dark_orange);
-  text-decoration-color: var(--dark_orange);
+  color: var(--med_orange);
+  transition: 0.3s;
 }
+
+.cards a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  bottom: 0;
+  background: var(--med_orange);
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.cards a:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
 
 @media only screen and (max-width: 768px) {
   .gridContainer {

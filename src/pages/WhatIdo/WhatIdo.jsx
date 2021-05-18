@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./WhatIdo.module.css";
-import Chat2 from "../../components/Chat2/Chat2";
+import Chat2 from "../../components/Chat/Chat";
 import { ReactComponent as Avatar } from "../../assets/female_avatar.svg";
 import { ReactComponent as Me } from "../../assets/chatMe.svg";
 import { ReactComponent as Send } from "../../assets/send.svg";

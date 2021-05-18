@@ -1,6 +1,6 @@
 .gridContainer {
   display: grid;
-  grid-template-rows: 140px repeat(2,120px) 80px 120px 80px repeat(2,120px) 80px;
+  grid-template-rows: 140px repeat(2, 120px) 80px 120px 80px repeat(2, 120px) 80px;
   grid-template-columns: 1fr;
 }
 
@@ -51,6 +51,39 @@
   margin-left: 15px;
   align-self: flex-start;
   min-width: 62px;
+}
+
+/* Animations for underline */
+
+.answer a {
+  color: var(--dark_purple);
+  text-decoration: none;
+  position: relative;
+  transition: 0.8s ease-out;
+}
+
+.answer a:hover{
+  color: var(--med_orange);
+  transition: 0.3s;
+}
+
+.answer a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  bottom: 0;
+  background: var(--med_orange);
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.answer a:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1054px) {

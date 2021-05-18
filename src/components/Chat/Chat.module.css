@@ -1,115 +1,137 @@
 .bubble {
-  background-repeat: no-repeat;
-  display: inline-block;
-  min-height: 100px;
-}
-
-/* * Home Bubbles */
-
-.homeBubbleLeft {
-  composes: bubble;
-  width: 210px;
-  background-image: url("../../assets/homeBubbleLeft.svg");
-}
-
-.homeBubbleRight {
-  composes: bubble;
-  width: 370px;
-  background-image: url("../../assets/homeBubbleRight.svg");
-}
-
-.homeLightText {
-  color: var(--light_teal);
-  padding-left: 28px;
-}
-
-.homeDarkText {
-  color: var(--dark_teal);
-  padding-left: 30px;
-}
-
-/* * Conversation bubbles */
-
-.bubbleRight {
-  composes: bubble;
-  height: 150px;
-  width: 640px;
-  background-image: url("../../assets/bubbleRight.svg");
-}
-
-.bubbleLeftSm {
-  composes: bubble;
-  width: 310px;
-  background-image: url("../../assets/bubbleLeftSm.svg");
-}
-
-.bubbleLeftLg {
-  composes: bubble;
-  width: 480px;
-  background-image: url("../../assets/bubbleLeftLg.svg");
-}
-
-.lightText {
-  color: var(--light_teal);
-  padding: 15px 50px 0 20px;
-}
-
-.darkText {
-  color: var(--dark_teal);
-  padding: 10px 0 0 40px;
-}
-
-a[class^="pingPong"] {
-  text-decoration: none;
-}
-
-a[class^="AWS"],
-a[class^="resume"] {
-  display: inline-block;
-  color: #ff9900;
-  transition: text-decoration 250ms;
-  text-decoration: underline solid transparent;
-  font-weight: bold;
-}
-
-a[class^="AWS"]:hover, a[class^="resume"]:hover {
-  text-decoration: underline;
-}
-
-a[id^="FED"] {
-  color: var(--light_teal);
-}
-
-/* *Purple underline animation on home page */
-
-a[class^="underline"] {
-  text-decoration: none;
-  display: inline;
   position: relative;
-  overflow: hidden;
-  transition: 0.8s ease-out;
+  border-radius: 20px;
+  height: fit-content;
+  min-height: 2.5rem;
+  max-width: 40rem;
+  display: inline-block;
 }
 
-a[class^="underline"]:hover {
-  color: #2a293b;
+.bubble > p {
+  padding: 12px;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.bubbleBR {
+  composes: bubble;
+  background-color: var(--dark_teal);
+}
+
+.bubbleBR > p {
+  color: var(--light_teal);
+}
+
+.bubbleBR::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: -7px;
+  border-radius: 5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid var(--dark_teal);
+}
+
+.bubbleBL {
+  composes: bubble;
+  background-color: var(--light_teal);
+}
+
+.bubbleBL > p {
+  color: var(--dark_teal);
+}
+
+.bubbleBL::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: -7px;
+  border-radius: 5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid var(--light_teal);
+}
+
+.bubbleTL {
+  composes: bubble;
+  background-color: var(--light_teal);
+}
+
+.bubbleTL > p {
+  color: var(--dark_teal);
+}
+
+.bubbleTL::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: -7px;
+  border-radius: 5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid var(--light_teal);
+}
+
+.bubbleTR {
+  composes: bubble;
+  background-color: var(--dark_teal);
+}
+
+.bubbleTR > p {
+  color: var(--light_teal);
+}
+
+.bubbleTR::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -7px;
+  border-radius: 5px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid var(--dark_teal);
+}
+
+/* * Animations */
+
+/* Home page */
+
+.bubbleBR > p > a {
+  text-decoration: none;
+  position: relative;
+  transition: 0.8s ease-out;
+  color: var(--dark_purple);
+}
+
+.bubbleBR > p > a:hover {
+  color: var(--med_orange);
   transition: 0.3s;
   cursor: pointer;
 }
 
-a[class^="underline"]:after {
+.bubbleBR > p > a::after {
   content: "";
   position: absolute;
   right: 0;
   width: 0;
-  top: 25px;
-  background: #2a293b;
+  bottom: 0;
+  background: var(--med_orange);
   height: 2px;
   transition-property: width;
   transition-duration: 0.4s;
   transition-timing-function: ease-out;
 }
 
-a[class^="underline"]:hover:after {
+.bubbleBR > p > a:hover::after {
   left: 0;
   right: auto;
   width: 100%;
