@@ -39,17 +39,17 @@ export const copy = {
       primary: {
         heading: "ping pong",
         body:
-          "although i love sports in general, ping pongs probably the one id consider myself the best at! ",
+          "ping pong was all around me as a kid. growing up it was in our playgrounds at school, and we even had one in the basement. my brother, friends and i would spend hours upon hours playing ping pong, and even playing in school. although i love sports in general, ping pongs probably the one id consider myself the best at! ",
       },
       secondary: {
         heading: "producer",
         body:
-          "although i didn’t grow up playing instruments, in university i became fascinated with the piano and later went on to produce songs, check me out on <a href='https://soundcloud.com/Shays' target='_blank'>soundcloud</a> ;)",
+          "although i didn’t grow up playing instruments, in university i learned to play the piano. one of my favourite pieces is 'la chute' by yann tiersen. later on i started to make digital music of my own, check me out on <a href='https://soundcloud.com/Shays' target='_blank'>soundcloud</a> ;)",
       },
       tertiary: {
         heading: "blacksmith",
         body:
-          "maybe it was the video games, maybe it was boredom, but during the summer of 2018 i decided to build a <a href='https://photos.app.goo.gl/qn2mqzEbvBkaOb1J2' target='_blank'>forge!</a>",
+          "maybe it was the video games, maybe it was boredom, but during the summer of 2018 i decided to build a <a href='https://photos.app.goo.gl/qn2mqzEbvBkaOb1J2' target='_blank'>forge</a>! i also built a mini bucket foundry that i used to do some aluminum investment casting, in a process known as 'lost foam casting'! ",
       },
     },
   },
