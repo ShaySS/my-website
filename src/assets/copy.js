@@ -42,12 +42,21 @@ export const copy = {
       },
       secondary: {
         heading: "producer",
-        body: "although i didn’t grow up playing instruments, in university i learned to play the piano. one of my favourite pieces is 'la chute' by yann tiersen. later on i started to make digital music of my own, check me out on <a href='https://soundcloud.com/Shays' target='_blank'>soundcloud</a> ;)",
+        body: "although i didn’t grow up playing instruments, in university i learned to play the piano. one of my favourite pieces is 'la chute' by yann tiersen. later on i started to make digital music of my own, check me out on <a href='https://soundcloud.com/shahbazs' target='_blank'>soundcloud</a> ;)",
       },
       tertiary: {
         heading: "blacksmith",
         body: "maybe it was the video games, maybe it was boredom, but during the summer of 2018 i decided to build a <a href='https://photos.app.goo.gl/qn2mqzEbvBkaOb1J2' target='_blank'>forge</a>! i also built a mini bucket foundry that i used to do some aluminum investment casting, in a process known as 'lost foam casting'! ",
       },
     },
+  },
+  Wheretofindme: {
+    thanks: "Thanks for stopping by",
+    blurb:
+      "if you’d like to connect, please reach out!! im pretty bored nowadays, what with the covid apocalypse and all",
+    gmail: "shaysiddi@gmail.com",
+    linkedin: "linkedin.com/in/shay-siddiqui/",
+    twitter: "twitter.com/shay_siddiqui",
+    github: "github.com/ShaySS",
   },
 };

@@ -1,4 +1,0 @@
-make it semantic... see notion
-accessibility
-responsiveness
-can the underline animation for AWS/resume go into the whatiDo.css, like it is for whoiam underline animation

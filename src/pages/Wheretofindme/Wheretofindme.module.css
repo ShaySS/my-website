@@ -1,54 +1,151 @@
-#thanks {
-  position: absolute;
-  top: 6rem;
-  left: 5rem;
-  display: block;
+.container {
+  width: 100vw;
+  max-width: 2024px;
+  margin: 0 auto;
+  height: calc(100vh - 4rem);
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  width: 50vw;
+  padding-left: 2rem;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "divider divider"
+    "blurb blurb"
+    "socials1 ."
+    "socials2 .";
+}
+
+.thanks {
+  grid-area: header;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.divider {
+  grid-area: divider;
+  justify-self: center;
 }
 
 .curve {
-  width: 10rem;
-  position: absolute;
-  top: 14rem;
-  left: 22rem;
+  width: 10vw;
+  height: auto;
+  padding: 1rem 0;
 }
 
 .curve path {
   fill: #673e29;
 }
 
-.line {
-  width: 44rem;
-  border-bottom: 2px solid #673e29;
+div img {
+  width: 4rem;
+}
+
+.blurb {
+  grid-area: blurb;
+  color: var(--brown);
+}
+
+.link {
+  height: fit-content;
+  width: fit-content;
+  padding: 0 2rem;
+  display: block;
+}
+
+.gmail {
+  grid-area: socials1;
+  composes: link;
+  justify-self: end;
+}
+
+.linkedin {
+  grid-area: socials1;
+  composes: link;
+}
+
+.twitter {
+  composes: link;
+  grid-area: socials2;
+  justify-self: end;
+}
+
+.github {
+  composes: link;
+  grid-area: socials2;
+}
+
+.socialPic {
   position: absolute;
-  top: 18.5rem;
-  left: 5rem;
+  right: -6rem;
+  bottom: 1rem;
+  height: 47vw;
+  padding-top: 10vw;
+  z-index: -1;
 }
 
-#contactIcons {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 25rem;
-  left: 5rem;
+@media only screen and (max-width: 1202px) {
+  h1.thanks {
+    font-size: 3rem;
+  }
 }
 
-#contactLinks {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 23rem;
-  left: 7rem;
+@media only screen and (max-width: 1054px) {
+  div img {
+    width: 2rem;
+  }
+
+  .link {
+    padding: 0 1rem;
+  }
 }
 
-#contactLinks li a {
-  text-decoration: none;
-}
+@media only screen and (max-width: 909px) {
+  .grid {
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas:
+      "header header header header"
+      "divider divider divider divider"
+      "blurb blurb blurb blurb"
+      "linkedin gmail github twitter"
+      "graphic graphic graphic graphic";
+  }
 
-#contactLinks li {
-  list-style-type: none;
-}
+  .socialPic {
+    grid-area: graphic;
+    position: unset;
+    width: auto;
+    place-self: center;
+    padding: 0;
+  }
 
-.mediaIcon {
-  width: 1.5rem;
-  margin-bottom: 20px;
+  .linkedin {
+    grid-area: linkedin;
+    place-self: center;
+  }
+  
+  .gmail {
+    grid-area: gmail;
+    place-self: center;
+  }
+  
+  .github {
+    grid-area: github;
+    place-self: center;
+  }
+  
+  .twitter {
+    grid-area: twitter;
+    place-self: center;
+  }
+
 }
