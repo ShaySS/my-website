@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Comfortaa";
+  font-weight: normal;
+  src: url("./fonts/Comfortaa-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Snell Roundhand";
+  font-weight: normal;
+  src: url("./fonts/SnellBT-Regular.otf");
+}
+
 :root {
   font-family: "Comfortaa", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff8ea;
@@ -12,8 +24,6 @@
   --light_teal: #c8ddc3;
   --brown: #673e29;
 }
-
-/* Typography */
 
 body {
   margin: 0;
