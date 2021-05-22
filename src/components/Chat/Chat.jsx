@@ -19,7 +19,6 @@ const Chat = ({ content, BR, BL, TR, TL }) => {
     // * (by rerouting and not causing browser refresh)
     const targetLink = e.target.closest("a");
     if (!targetLink) return;
-    console.log(e.target.href);
     if (!e.target.href.includes("AWS") && !e.target.href.includes("Resume")) {
       e.preventDefault();
       const nav = targetLink.href.substring(targetLink.href.lastIndexOf("/") + 1);
