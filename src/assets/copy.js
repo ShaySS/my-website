@@ -17,14 +17,14 @@ export const copy = {
     },
     answer: {
       what_i_do:
-        "im a toronto-based engineer that's been developing in front-end for just over 2 years",
+        "i'm a toronto-based engineer that's been developing in front-end for just over 2 years",
       what_i_do_2:
-        "im well versed in React & Angular, see my <a href='Siddiqui_dev_Resume.pdf' target='_blank'>resume</a> for more!",
-      where_i_work: "currently im working at Deloitte as part of their digital practice :)",
+        "i'm well versed in React & Angular, see my <a href='Siddiqui_dev_Resume.pdf' target='_blank'>resume</a> for more!",
+      where_i_work: "currently i'm working at Deloitte as part of their digital practice :)",
       something_else_to_share:
         "i'm <a href='AWS_Cert.pdf' target='_blank'>AWS</a> certified, and have good exposure to server-side technologies like Node and Express!",
       something_else_to_share_2:
-        "oh, and im a master at ping pong <a href='/whoIam' class='pingPong'>🏓</a>",
+        "oh, and i'm a master at ping pong <a href='/whoIam' class='pingPong'>🏓</a>",
     },
     send_a_msg: "Send a message...",
   },
@@ -38,7 +38,7 @@ export const copy = {
     cards: {
       primary: {
         heading: "ping pong",
-        body: "ping pong was all around me as a kid. growing up it was in our playgrounds at school, and we even had one in the basement. my brother, friends and i would spend hours upon hours playing ping pong, and even playing in school. although i love sports in general, ping pongs probably the one id consider myself the best at! ",
+        body: "ping pong was all around me as a kid. growing up it was in our playgrounds at school, and we even had one in the basement. my brother, friends and i would spend hours upon hours playing ping pong, and even playing in school. although i love sports in general, ping pong's probably the one i'd consider myself the best at! ",
       },
       secondary: {
         heading: "producer",
@@ -53,7 +53,7 @@ export const copy = {
   Wheretofindme: {
     thanks: "Thanks for stopping by",
     blurb:
-      "if you’d like to connect, please reach out!! im pretty bored nowadays, what with the covid apocalypse and all",
+      "if you’d like to connect, please reach out!! i'm pretty bored nowadays, what with the covid apocalypse and all",
     gmail: "shaysiddi@gmail.com",
     linkedin: "linkedin.com/in/shay-siddiqui/",
     twitter: "twitter.com/shay_siddiqui",
